@@ -1,15 +1,15 @@
 <template>
-    <div class="round">{{this.$parent.turn}}</div>
+    <div class="highScore">{{this.$parent.highScore}}</div>
 </template>
 
 <script>
     export default {
-        name: "Round"
+        name: "HighScore"
     }
 </script>
 
 <style scoped>
-    .round{
+    .highScore{
         position: absolute;
         background: #330000;
         color: red;
@@ -18,7 +18,7 @@
         height: 30px;
         width: 50px;
         margin-left: 90px;
-        margin-top: 170px;
+        margin-top: 50px;
         text-align: center;
         vertical-align: middle;
         line-height: 30px;
