@@ -56,8 +56,6 @@
                 const self = this
                 let index;
 
-                console.log(target.currentTarget.className)
-
                 switch(target.currentTarget.className) {
                     case "green":
                         index = 1;
@@ -95,8 +93,6 @@
                 if (self.turn == self.playerOrder.length && self.good ) {
                     console.log('current Highscore: ' + localStorage.highScore)
                     if( self.turn > ( localStorage.highScore || 0 )) {
-                      console.log('New High Score: ' + self.turn)
-
                      self.highScore = self.turn;
                     }
 
