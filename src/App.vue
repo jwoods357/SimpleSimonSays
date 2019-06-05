@@ -25,7 +25,6 @@ export default {
   margin: auto;
   width: 50%;
   padding: 10px;
-
 }
 
 h1, h2 {

@@ -1,7 +1,7 @@
 <template>
   <div class="tools">
     <round></round>
-    <button type="button" class="startButton">Start</button>
+    <button type="button" class="startButton" v-on:click= "start()">Start</button>
   </div>
 </template>
 
@@ -11,7 +11,12 @@
 
     export default {
         name: "Tools",
-        components: {Round}
+        components: {Round},
+        methods: {
+            start () {
+                Event.$emit('start', this.name)
+            }
+        }
     }
 </script>
 
